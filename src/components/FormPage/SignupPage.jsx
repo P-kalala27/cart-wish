@@ -26,7 +26,7 @@ const SignupPage = () => {
     console.log(profile);
   return (
     <section className='flex justify-center items-start
-     bg-white lg:w-[600px]  mx-auto shadow-lg'>
+     bg-white lg:w-[600px] lg:h-[700px]  mx-auto shadow-lg'>
             <form className='flex flex-col' onSubmit={handleSubmit(onSubmit)}>
                 <h2 className='text-center py-5 text-pretty
                  leading-8 text-2xl font-montserrat font-medium'>Sign Up</h2>

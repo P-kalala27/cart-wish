@@ -1,4 +1,5 @@
-import ProductCard from ".../Products/ProductCard";
+import ProductCard from "../Products/ProductCard";
+
 
 
 const FeatureProduct = () => {

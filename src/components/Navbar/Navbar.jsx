@@ -3,6 +3,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import { BiSearch } from "react-icons/bi";
 import { FiShoppingCart } from "react-icons/fi";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { NavLink } from "react-router-dom";
 import NavList from "./NavList";
 
 const Navbar = () => {
@@ -11,12 +12,12 @@ const Navbar = () => {
     <header className="flex sticky h-auto w-full p-6 lg:px-24 bg-white shadow-sm">
       <nav className="flex flex-wrap justify-around items-center w-full lg:justify-between lg:relative lg:max-container">
         <div className="lg:pl-5">
-          <a href="/">
+          <NavLink to="/">
             <h1 className="uppercase font-bold text-2xl">
               <span className="text-indigo-500">Cart</span>
               <span className="text-green-500">Wish</span>
             </h1>
-          </a>
+          </NavLink>
         </div>
         <div className="w-full my-5 lg:w-1/3 lg:absolute lg:left-[20%] pt-4">
           <form action="">
