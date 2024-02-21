@@ -1,8 +1,9 @@
 
+import useData from '../../hook/useData';
 import ProductCard from './ProductCard';
 
-
 const ProductList = () => {
+   const {data, error}= useData("/product")
   return (
     <div className="flex flex-col px-2">
         <div className="flex justify-evenly lg:justify-between items-center py-4 lg:px-3">
@@ -22,12 +23,15 @@ const ProductList = () => {
         <div className='flex w-full px-4 lg:flex-row py-3'>
             <div className='max-w-md lg:max-w-5xl flex flex-wrap
              mx-auto lg:mx-0  gap-8 lg:items-center lg:justify-center'>
-            <ProductCard/>
-            <ProductCard/>
-            <ProductCard/>
-            <ProductCard/>
-            <ProductCard/>
-            <ProductCard/>
+            {
+                error && <em className='text-red-300'>{error}</em>
+            }
+            
+            {
+              data?.products &&  data.products.map(product => <ProductCard key={product._id} id={product._id} 
+                image={product.images[0]} price={product.price} title={product.title}
+                rating={product.reviews.rate} ratingCount={product.reviews.counts} stock={product.stock} />)
+            }
             </div>
         </div>
     </div>

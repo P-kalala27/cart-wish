@@ -9,7 +9,7 @@ import NavList from "./NavList";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <header className="flex sticky h-auto w-full p-6 lg:px-24 bg-white shadow-sm">
+    <header className="flex sticky h-auto w-full p-6 lg:px-24 bg-white shadow-sm z-50">
       <nav className="flex flex-wrap justify-around items-center w-full lg:justify-between lg:relative lg:max-container">
         <div className="lg:pl-5">
           <NavLink to="/">

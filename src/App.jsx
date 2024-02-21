@@ -6,7 +6,7 @@ import Routing from "./components/Routing/Routing";
 
 const App = () => {
   return (
-    <div className="">
+    <div className=" overflow-hidden">
       <Navbar />
       <main>
        <Routing/>

@@ -5,7 +5,7 @@ import { navItems } from "../../constante";
 const NavList = () => {
   return (
     <div>
-        <ul className="flex text-black h-full z-50 flex-col gap-8 justify-between
+        <ul className="flex text-black h-full z-0 flex-col gap-8 justify-between
          items-start lg:mt-8 lg:px-10 py-4">
             {
                 navItems.map((item) => (
